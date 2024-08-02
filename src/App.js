@@ -13,7 +13,7 @@ function App() {
         Upload and Share your Image
       </div>
 
-      <div App-content>
+      <div className='App-content'>
         <ImageUploadFeature />
       </div>
     </div>

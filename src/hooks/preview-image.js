@@ -18,9 +18,12 @@ const usePreviewImage = () => {
         }
       };
 
+    const handleDelete = () => {
+      setSelectedFile(null);
+      setImagePreview(null);
+    };
 
-
-    return { selectedFile, imagePreview, handleFileChange };
+    return { selectedFile, imagePreview, handleFileChange, handleDelete };
 }
 
 export default usePreviewImage

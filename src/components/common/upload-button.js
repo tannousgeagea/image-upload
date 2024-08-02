@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Button from "../ui/button";
 
 
-const UploadButton = ({ handleFileChange }) => {
+const UploadButton = ({ text, handleFileChange }) => {
 
     const fileInputRef = useRef(null);
 
@@ -20,7 +20,7 @@ const UploadButton = ({ handleFileChange }) => {
             />
 
             <Button 
-                text='upload'
+                text={text}
                 onClick={handleButtonClick}
             />
 
