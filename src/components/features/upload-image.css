@@ -29,6 +29,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
+    gap: 2rem;
 }
 
 .image-preview {
@@ -37,6 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   
 .image-preview img {
@@ -83,3 +85,52 @@
 .image-preview:hover .delete-icon {
     visibility: visible;
   }
+
+.submit-image {
+    display: flex;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0 10px 0 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.submit-image p {
+    font-style: italic;
+    font-size: 16;
+}
+
+.submit-image:hover {
+    background-color: green;
+}
+
+
+.progress-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+.progress-bar {
+    width: 80%;
+    text-align: center;
+    color: grey;
+}
+
+.progress-bar progress {
+    width: 100%;
+    height: 30px;
+    color: green;
+}
+
+.progress-bar span {
+    margin-top: 10px;
+    display: block;
+    color: black;
+}
